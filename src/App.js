@@ -1,11 +1,14 @@
 import React from 'react';
-import { Counter } from './features/counter/Counter';
 import './App.css';
+import Sidebar from './Sidebar';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Lets build</h1>
+    //BEM naming convention
+    <div className="app">
+
+      <Sidebar/>
+      {/* chat */}
     </div>
   );
 }
