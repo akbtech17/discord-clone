@@ -6,6 +6,10 @@ import SidebarChannel from './SidebarChannel';
 import SignalCellularAltIcon from '@material-ui/icons/SignalCellularAlt';
 import { InfoOutlined } from '@material-ui/icons';
 import CallIcon from '@material-ui/icons/Call';
+import { Avatar } from '@material-ui/core';
+import MicIcon from '@material-ui/icons/Mic';
+import HeadsetIcon from '@material-ui/icons/Headset';
+import SettingsIcon from '@material-ui/icons/Settings';
 
 export default function Sidebar() {
     return (
@@ -45,7 +49,19 @@ export default function Sidebar() {
                     <InfoOutlined />
                     <CallIcon />
                 </div>
-            </div>     
+            </div> 
+            <div className="sidebar__profile">
+                <Avatar src="https://media-exp1.licdn.com/dms/image/C5103AQHpuYGIbridqg/profile-displayphoto-shrink_400_400/0?e=1608163200&v=beta&t=6Yt1HK9GJgVUC8TTFjibuTzlDNFsCHLUsAMHbtlSnAU"/>  
+                <div className="sidebar__profileInfo">
+                    <h3>@anshulbansal17</h3>
+                    <p>#thisismy id</p>
+                </div> 
+                <div className="sidebar__profileIcons">
+                    <MicIcon />
+                    <HeadsetIcon />
+                    <SettingsIcon />
+                </div> 
+            </div>    
         </div>
     );
 }
